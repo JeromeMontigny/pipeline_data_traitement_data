@@ -6,4 +6,3 @@ parser.add_argument("x",type=int,help='votre nombre')
 args=parser.parse_args()
 
 print(functions.racine_carree(args.x))
-print(functions.racine_carree(-5))
