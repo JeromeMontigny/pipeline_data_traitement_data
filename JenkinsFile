@@ -9,9 +9,10 @@ pipeline {
         }
         stage('Test') {
             steps {
-                pwd
-                ls
-                echo 'Testing'
+                sh '''pwd
+                    ls
+                    echo 'Testing'
+                    '''
             }
         }
         stage('Deploy') {
