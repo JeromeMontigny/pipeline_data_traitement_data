@@ -11,7 +11,7 @@ pipeline {
             steps {
                 bat '''cd
                     dir
-                    echo 'Testing'
+                    python main.py
                     '''
             }
         }
