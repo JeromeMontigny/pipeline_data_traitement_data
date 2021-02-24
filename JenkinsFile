@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''cd
-                    dir
+                    ls
                     python3 main.py
                     '''
             }
