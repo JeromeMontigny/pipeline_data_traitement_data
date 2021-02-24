@@ -7,9 +7,10 @@ pipeline {
                 echo 'Building'
             }
         }
+        agent { docker { image 'python:3.9.1' } }
         stage('Test') {
             steps {
-                bat '''cd
+                sh '''cd
                     dir
                     python3 main.py
                     '''
