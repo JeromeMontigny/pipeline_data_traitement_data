@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { docker { image 'python:3.9.1' } }
 
     stages {
         stage('Build') {
@@ -7,7 +7,6 @@ pipeline {
                 echo 'Building'
             }
         }
-        agent { docker { image 'python:3.9.1' } }
         stage('Test') {
             steps {
                 sh '''cd
