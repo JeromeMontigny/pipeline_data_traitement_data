@@ -11,7 +11,7 @@ pipeline {
             steps {
                 bat '''cd
                     dir
-                    python main.py
+                    python3 main.py
                     '''
             }
         }
