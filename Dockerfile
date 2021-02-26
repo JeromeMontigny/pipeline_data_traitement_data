@@ -7,5 +7,7 @@ WORKDIR /src
 RUN pip install numpy
 RUN pip install pytest
 
-RUN ["pytest > tests.log"]
+RUN touch tests.log
+RUN pytest > tests.log
+
 CMD tail -f /dev/null
