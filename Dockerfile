@@ -7,4 +7,5 @@ WORKDIR /src
 RUN pip install numpy
 RUN pip install pytest
 
-CMD ["pytest"]
+RUN ["pytest", "-v", "--junitxml=reports/result.xml"]
+CMD tail -f /dev/null
