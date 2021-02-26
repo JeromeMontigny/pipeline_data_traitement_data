@@ -7,5 +7,4 @@ WORKDIR /src
 RUN pip install numpy
 RUN pip install pytest
 
-CMD ["docker ready"]
-ENTRYPOINT [ "echo" ]
+CMD ["pytest"]
